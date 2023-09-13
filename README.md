@@ -1,5 +1,5 @@
 # Ano4-ECT
-Everything I did in My Forth Year as a Computer and Telematics Engineering Student!
+Everything I did in My Fourth Year as a Computer and Telematics Engineering Student!
 
 # 1st Semester
 - Informação e Codificação (IC)
