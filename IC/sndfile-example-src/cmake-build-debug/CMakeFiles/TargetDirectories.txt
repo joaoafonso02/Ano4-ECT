@@ -1,0 +1,5 @@
+/Users/joaoafonso/Desktop/UA/Ano4-ECT/IC/sndfile-example-src/cmake-build-debug/CMakeFiles/wav_cp.dir
+/Users/joaoafonso/Desktop/UA/Ano4-ECT/IC/sndfile-example-src/cmake-build-debug/CMakeFiles/wav_hist.dir
+/Users/joaoafonso/Desktop/UA/Ano4-ECT/IC/sndfile-example-src/cmake-build-debug/CMakeFiles/wav_dct.dir
+/Users/joaoafonso/Desktop/UA/Ano4-ECT/IC/sndfile-example-src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/joaoafonso/Desktop/UA/Ano4-ECT/IC/sndfile-example-src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

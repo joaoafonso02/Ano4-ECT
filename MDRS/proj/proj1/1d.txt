@@ -1,0 +1,6 @@
+1. d) Consider the system modelled by a M/G/1 queueing model.
+Determine the theoretical values of the average packet delay for all cases of 1.a. Compare
+the theoretical values with the simulation results and draw conclusions.
+
+
+R: Caso estejamos a considerar um sitema mmodelado por um modelo de queueing M/G/1 

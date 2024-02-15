@@ -1,0 +1,39 @@
+% Exercício 1
+
+%% 1.a)
+fprintf("1 a)")
+N = 20;             % times to simulate
+P = 100000;          % stoping criteria
+rate = 1800;        % pps
+C = [10,20,30,40];  % 10, 20, 30, 40 Mbps
+f = 1000000;        % Bytes
+alfa = 0.1;         % 90% confidence interval
+
+PL = zeros(1, N);
+APD = zeros(1, N);
+MPD = zeros(1, N);
+TT = zeros(1, N);
+for it = 1:N
+        [ PL(it), APD(it), MPD(it), TT(it) ] = Simulator1(rate, C, f, P);
+
+        % Calculate Avg. Packet Delay
+    media = mean(APD);
+    term = norminv(1-alfa/2)*sqrt(var(APD)/N);
+    APD_values(i) = media;
+    APD_terms(i) = term;
+    
+    % Calculate Avg. Packet Loss
+    media = mean(PL);
+    term = norminv(1-alfa/2)*sqrt(var(PL)/N);
+    PL_values(i) = media;
+    PL_terms(i) = term;
+end
+
+
+media = mean(PL);
+term = norminv(1-alfa/2) * sqrt(var(PL)/N);
+fprintf('PacketLoss (%%)\t= %.2e +- %.2e\n', media, term);
+
+media = mean(APD);
+term = norminv(1-alfa/2) * sqrt(var(APD)/N);
+fprintf('Av. Packet Delay (ms)\t= %.2e +- %.2e\n', media, term);
