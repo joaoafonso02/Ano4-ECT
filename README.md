@@ -11,6 +11,6 @@ Everything I did in My Fourth Year as a Computer and Telematics Engineering Stud
 # 2nd Semester
 - Sistemas Distribuídos (SD)
 - Arquiteturas para Sistemas Embutidos (ASE)
-- SSegurança em Redes de Comunicações (SRC)
-- 
-- 
+- Segurança em Redes de Comunicações (SRC)
+- Engenharia e Gestão de Serviços (EGS)
+- Computação em Larga Escala (CLE)
