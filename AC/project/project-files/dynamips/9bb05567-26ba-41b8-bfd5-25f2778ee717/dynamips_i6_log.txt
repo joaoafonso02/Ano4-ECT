@@ -1,0 +1,48 @@
+Dec 16 13:30:25.428 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+Dec 16 13:30:25.429 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49896.
+Dec 16 13:30:25.440 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 16 13:30:25.441 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips 
+Dec 16 13:30:25.441 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips
+Dec 16 13:30:25.442 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/9bb05567-26ba-41b8-bfd5-25f2778ee717 
+Dec 16 13:30:25.442 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/9bb05567-26ba-41b8-bfd5-25f2778ee717
+Dec 16 13:30:25.443 HYPERVISOR: exec_cmd: vm create RA2 6 c7200 
+Dec 16 13:30:25.443 VM: VM RA2 created.
+Dec 16 13:30:25.444 HYPERVISOR: exec_cmd: vm set_con_tcp_port RA2 5006 
+Dec 16 13:30:25.445 HYPERVISOR: exec_cmd: c7200 get_mac_addr RA2 
+Dec 16 13:30:25.445 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 13:30:25.446 HYPERVISOR: exec_cmd: vm slot_add_binding RA2 0 0 C7200-IO-FE 
+Dec 16 13:30:25.447 HYPERVISOR: exec_cmd: vm set_disk0 RA2 0 
+Dec 16 13:30:25.447 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 13:30:25.448 HYPERVISOR: exec_cmd: vm set_idle_pc RA2 0x6062db80 
+Dec 16 13:30:25.449 HYPERVISOR: exec_cmd: vm set_ios RA2 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 16 13:30:25.450 HYPERVISOR: exec_cmd: c7200 set_mac_addr RA2 ca06.3174.0000 
+Dec 16 13:30:25.451 HYPERVISOR: exec_cmd: vm set_nvram RA2 512 
+Dec 16 13:30:25.452 HYPERVISOR: exec_cmd: vm set_ram RA2 512 
+Dec 16 13:30:25.452 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 13:30:25.453 HYPERVISOR: exec_cmd: vm slot_remove_binding RA2 0 0 
+Dec 16 13:30:25.453 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 13:30:25.454 HYPERVISOR: exec_cmd: vm slot_add_binding RA2 0 0 C7200-IO-2FE 
+Dec 16 13:30:25.454 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 13:30:25.455 HYPERVISOR: exec_cmd: vm slot_add_binding RA2 1 0 PA-2FE-TX 
+Dec 16 13:30:25.455 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 13:30:25.455 HYPERVISOR: exec_cmd: vm slot_add_binding RA2 2 0 PA-2FE-TX 
+Dec 16 13:30:25.456 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 13:30:25.457 HYPERVISOR: exec_cmd: vm slot_add_binding RA2 3 0 PA-2FE-TX 
+Dec 16 13:30:28.397 HYPERVISOR: exec_cmd: nio create_udp udp-7f75ac20-f636-4af6-91c9-d7fabb5c279c 10052 127.0.0.1 10053 
+Dec 16 13:30:28.622 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA2 0 0 udp-7f75ac20-f636-4af6-91c9-d7fabb5c279c 
+Dec 16 13:30:28.623 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 23:31:45.099 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 16 23:31:45.100 HYPERVISOR: exec_cmd: vm extract_config RA2 
+Dec 18 09:53:35.168 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 18 09:53:35.171 HYPERVISOR: exec_cmd: vm extract_config RA2 
+Dec 21 14:13:57.199 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 21 14:13:57.208 HYPERVISOR: exec_cmd: vm extract_config RA2 
+Dec 21 14:24:23.565 HYPERVISOR: exec_cmd: vm set_ios RA2 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 21 14:45:09.651 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 21 14:45:09.653 HYPERVISOR: exec_cmd: vm extract_config RA2 
+Dec 21 14:47:08.981 HYPERVISOR: exec_cmd: vm get_status RA2 
+Dec 21 14:47:08.983 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding RA2 0 0 
+Dec 21 14:47:09.001 HYPERVISOR: exec_cmd: nio delete udp-7f75ac20-f636-4af6-91c9-d7fabb5c279c 
+Dec 21 14:48:03.013 HYPERVISOR: exec_cmd: nio create_udp udp-78f8fb0f-2a2f-4792-ae77-dd10d2c672df 10040 127.0.0.1 10041 
+Dec 21 14:48:03.019 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA2 0 0 udp-78f8fb0f-2a2f-4792-ae77-dd10d2c672df 
+Dec 21 14:48:03.020 HYPERVISOR: exec_cmd: vm get_status RA2 

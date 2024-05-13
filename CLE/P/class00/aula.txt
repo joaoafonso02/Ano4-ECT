@@ -1,0 +1,1 @@
+gcc -Wall -o3 -o a Ex01.c

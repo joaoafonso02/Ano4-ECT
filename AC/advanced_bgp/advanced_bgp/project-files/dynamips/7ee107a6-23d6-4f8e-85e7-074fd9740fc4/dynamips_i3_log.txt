@@ -1,0 +1,16 @@
+Oct 11 11:05:46.275 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+Oct 11 11:05:46.276 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63771.
+Oct 11 11:05:46.287 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 11 11:05:46.288 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/advanced_bgp/advanced_bgp/project-files/dynamips 
+Oct 11 11:05:46.288 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/advanced_bgp/advanced_bgp/project-files/dynamips
+Oct 11 11:05:46.288 HYPERVISOR: exec_cmd: ethsw create Switch3 
+Oct 11 11:05:49.454 HYPERVISOR: exec_cmd: nio create_udp udp-60a0e50f-0b81-4c83-9f55-27bd097bb297 10057 127.0.0.1 10056 
+Oct 11 11:05:49.455 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-60a0e50f-0b81-4c83-9f55-27bd097bb297 
+Oct 11 11:05:49.481 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-60a0e50f-0b81-4c83-9f55-27bd097bb297 1 
+Oct 11 11:05:49.523 HYPERVISOR: exec_cmd: nio create_udp udp-887d00d3-1d35-43a9-a6ea-1822b7791ca1 10060 127.0.0.1 10061 
+Oct 11 11:05:49.523 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-887d00d3-1d35-43a9-a6ea-1822b7791ca1 
+Oct 11 11:05:49.543 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-887d00d3-1d35-43a9-a6ea-1822b7791ca1 1 
+Oct 17 08:35:34.061 HYPERVISOR: exec_cmd: ethsw delete Switch3 
+Oct 17 08:35:34.104 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 17 08:35:34.473 HYPERVISOR: Stopped.
+Oct 17 08:35:34.477 GENERAL: reset done.

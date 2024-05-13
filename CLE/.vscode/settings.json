@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "*.html": "django-html",
+    "__locale": "c",
+    "ios": "c"
+  }
+}

@@ -1,0 +1,49 @@
+Dec 21 14:48:21.831 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+Dec 21 14:48:21.832 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65184.
+Dec 21 14:48:21.838 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 21 14:48:21.839 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips 
+Dec 21 14:48:21.839 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips
+Dec 21 14:48:21.839 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/9feb2f63-1116-4298-a3b7-6abeaff7ec14 
+Dec 21 14:48:21.839 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/9feb2f63-1116-4298-a3b7-6abeaff7ec14
+Dec 21 14:48:21.839 HYPERVISOR: exec_cmd: vm create NewYork 4 c7200 
+Dec 21 14:48:21.843 VM: VM NewYork created.
+Dec 21 14:48:21.843 HYPERVISOR: exec_cmd: vm set_con_tcp_port NewYork 5004 
+Dec 21 14:48:21.843 HYPERVISOR: exec_cmd: c7200 get_mac_addr NewYork 
+Dec 21 14:48:21.844 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:21.844 HYPERVISOR: exec_cmd: vm slot_add_binding NewYork 0 0 C7200-IO-FE 
+Dec 21 14:48:21.845 HYPERVISOR: exec_cmd: vm set_disk0 NewYork 0 
+Dec 21 14:48:21.846 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:21.846 HYPERVISOR: exec_cmd: vm set_idle_pc NewYork 0x6062db80 
+Dec 21 14:48:21.847 HYPERVISOR: exec_cmd: vm set_ios NewYork /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 21 14:48:21.847 HYPERVISOR: exec_cmd: c7200 set_mac_addr NewYork ca04.3160.0000 
+Dec 21 14:48:21.847 HYPERVISOR: exec_cmd: vm set_nvram NewYork 512 
+Dec 21 14:48:21.848 HYPERVISOR: exec_cmd: vm set_ram NewYork 512 
+Dec 21 14:48:21.848 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:21.848 HYPERVISOR: exec_cmd: vm slot_remove_binding NewYork 0 0 
+Dec 21 14:48:21.848 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:21.848 HYPERVISOR: exec_cmd: vm slot_add_binding NewYork 0 0 C7200-IO-2FE 
+Dec 21 14:48:21.849 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:21.849 HYPERVISOR: exec_cmd: vm slot_add_binding NewYork 1 0 PA-2FE-TX 
+Dec 21 14:48:21.849 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:21.849 HYPERVISOR: exec_cmd: vm slot_add_binding NewYork 2 0 PA-2FE-TX 
+Dec 21 14:48:21.849 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:21.849 HYPERVISOR: exec_cmd: vm slot_add_binding NewYork 3 0 PA-2FE-TX 
+Dec 21 14:48:23.105 HYPERVISOR: exec_cmd: nio create_udp udp-ba66d7e6-3d88-4946-939d-7e4b888bbd86 10002 127.0.0.1 10003 
+Dec 21 14:48:23.327 HYPERVISOR: exec_cmd: vm slot_add_nio_binding NewYork 1 0 udp-ba66d7e6-3d88-4946-939d-7e4b888bbd86 
+Dec 21 14:48:23.328 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:23.648 HYPERVISOR: exec_cmd: nio create_udp udp-54cf0a81-b62d-4dde-9c76-166e7449d716 10008 127.0.0.1 10009 
+Dec 21 14:48:23.650 HYPERVISOR: exec_cmd: vm slot_add_nio_binding NewYork 0 0 udp-54cf0a81-b62d-4dde-9c76-166e7449d716 
+Dec 21 14:48:23.651 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:31.857 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:31.858 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding NewYork 1 0 
+Dec 21 14:48:31.859 HYPERVISOR: exec_cmd: nio delete udp-ba66d7e6-3d88-4946-939d-7e4b888bbd86 
+Dec 21 14:48:31.918 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:31.919 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding NewYork 0 0 
+Dec 21 14:48:31.920 HYPERVISOR: exec_cmd: nio delete udp-54cf0a81-b62d-4dde-9c76-166e7449d716 
+Dec 21 14:48:32.271 HYPERVISOR: exec_cmd: vm get_status NewYork 
+Dec 21 14:48:32.272 HYPERVISOR: exec_cmd: vm extract_config NewYork 
+Dec 21 14:48:32.276 HYPERVISOR: exec_cmd: vm delete NewYork 
+Dec 21 14:48:32.277 VM: VM NewYork destroyed.
+Dec 21 14:48:32.278 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 21 14:48:32.395 HYPERVISOR: Stopped.
+Dec 21 14:48:32.395 GENERAL: reset done.

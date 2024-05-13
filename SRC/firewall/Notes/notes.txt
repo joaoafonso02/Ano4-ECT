@@ -1,0 +1,43 @@
+GUIAO FIREWALL VYOS
+
+3. AQUI DÁ PARA PINGAR TUDO 
+vyos@vyos:~$ show nat source rules
+Disabled rules are not shown
+Codes: X - exclude rule, M - masquerade rule
+
+rule    intf              translation                                               
+----    ----              -----------                                               
+100     eth0              saddr 10.1.1.0/24 to 192.1.0.1-192.1.0.10                 
+        proto-all         sport ANY                                                      
+vyos@vyos:~$ show nat source translations
+Pre-NAT              Post-NAT             Prot  Timeout 
+200.1.1.100          200.1.1.100          icmp  28      
+200.1.1.100          200.1.1.100          icmp  26      
+200.1.1.100          200.1.1.100          icmp  27      
+200.1.1.100          200.1.1.100          icmp  29   
+
+
+4. AQUI NÃO PINGA NADA
+
+5. From PC1 to PC2 there is connection, ping works just fine but to server not as much.
+PC1> ping 200.1.1.100
+
+84 bytes from 200.1.1.100 icmp_seq=1 ttl=63 time=5.119 ms
+84 bytes from 200.1.1.100 icmp_seq=2 ttl=63 time=2.476 ms
+84 bytes from 200.1.1.100 icmp_seq=3 ttl=63 time=1.191 ms
+84 bytes from 200.1.1.100 icmp_seq=4 ttl=63 time=1.632 ms
+84 bytes from 200.1.1.100 icmp_seq=5 ttl=63 time=3.965 ms
+
+PC1> ping 192.1.1.140
+
+192.1.1.140 icmp_seq=1 timeout
+192.1.1.140 icmp_seq=2 timeout
+192.1.1.140 icmp_seq=3 timeout
+192.1.1.140 icmp_seq=4 timeout
+192.1.1.140 icmp_seq=5 timeout
+
+6. FROM PC1 i get connection with both, PC2 (outside) and PC3,4 (Server Farm)
+
+7. From PC2 i can get to PC3 (192.1.1.40) but not 192.1.1.140 cause it wasnt initially configured on the firewall permissions.
+
+8. Now yes, there is connection between DNZ farm and Outside. 

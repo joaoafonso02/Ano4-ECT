@@ -1,0 +1,50 @@
+Dec 16 13:30:25.644 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+Dec 16 13:30:25.645 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49906.
+Dec 16 13:30:25.654 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 16 13:30:25.655 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips 
+Dec 16 13:30:25.655 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips
+Dec 16 13:30:25.655 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/b3e3764d-5c14-4a4f-932f-da81ba76455a 
+Dec 16 13:30:25.655 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/b3e3764d-5c14-4a4f-932f-da81ba76455a
+Dec 16 13:30:25.656 HYPERVISOR: exec_cmd: vm create RL2 9 c7200 
+Dec 16 13:30:25.656 VM: VM RL2 created.
+Dec 16 13:30:25.656 HYPERVISOR: exec_cmd: vm set_con_tcp_port RL2 5009 
+Dec 16 13:30:25.657 HYPERVISOR: exec_cmd: c7200 get_mac_addr RL2 
+Dec 16 13:30:25.657 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 13:30:25.657 HYPERVISOR: exec_cmd: vm slot_add_binding RL2 0 0 C7200-IO-FE 
+Dec 16 13:30:25.658 HYPERVISOR: exec_cmd: vm set_disk0 RL2 0 
+Dec 16 13:30:25.658 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 13:30:25.659 HYPERVISOR: exec_cmd: vm set_idle_pc RL2 0x6062db80 
+Dec 16 13:30:25.659 HYPERVISOR: exec_cmd: vm set_ios RL2 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 16 13:30:25.660 HYPERVISOR: exec_cmd: c7200 set_mac_addr RL2 ca09.317c.0000 
+Dec 16 13:30:25.662 HYPERVISOR: exec_cmd: vm set_nvram RL2 512 
+Dec 16 13:30:25.663 HYPERVISOR: exec_cmd: vm set_ram RL2 512 
+Dec 16 13:30:25.664 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 13:30:25.664 HYPERVISOR: exec_cmd: vm slot_remove_binding RL2 0 0 
+Dec 16 13:30:25.664 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 13:30:25.665 HYPERVISOR: exec_cmd: vm slot_add_binding RL2 0 0 C7200-IO-2FE 
+Dec 16 13:30:25.665 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 13:30:25.665 HYPERVISOR: exec_cmd: vm slot_add_binding RL2 1 0 PA-2FE-TX 
+Dec 16 13:30:25.666 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 13:30:25.666 HYPERVISOR: exec_cmd: vm slot_add_binding RL2 2 0 PA-2FE-TX 
+Dec 16 13:30:25.666 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 13:30:25.667 HYPERVISOR: exec_cmd: vm slot_add_binding RL2 3 0 PA-2FE-TX 
+Dec 16 13:30:27.414 HYPERVISOR: exec_cmd: nio create_udp udp-ee705fad-09d4-421f-bc4f-54d529bbd3d9 10034 127.0.0.1 10035 
+Dec 16 13:30:27.642 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RL2 0 0 udp-ee705fad-09d4-421f-bc4f-54d529bbd3d9 
+Dec 16 13:30:27.643 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 15:36:20.887 HYPERVISOR: exec_cmd: vm set_ios RL2 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 16 15:36:20.953 HYPERVISOR: exec_cmd: vm set_ios RL2 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 16 23:31:45.113 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 16 23:31:45.143 HYPERVISOR: exec_cmd: vm extract_config RL2 
+Dec 18 09:53:35.182 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 18 09:53:35.184 HYPERVISOR: exec_cmd: vm extract_config RL2 
+Dec 21 14:13:57.223 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 21 14:13:57.427 HYPERVISOR: exec_cmd: vm extract_config RL2 
+Dec 21 14:24:28.712 HYPERVISOR: exec_cmd: vm set_ios RL2 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 21 14:45:09.664 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 21 14:45:09.677 HYPERVISOR: exec_cmd: vm extract_config RL2 
+Dec 21 14:45:32.990 HYPERVISOR: exec_cmd: vm get_status RL2 
+Dec 21 14:45:32.992 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding RL2 0 0 
+Dec 21 14:45:33.008 HYPERVISOR: exec_cmd: nio delete udp-ee705fad-09d4-421f-bc4f-54d529bbd3d9 
+Dec 21 14:46:18.409 HYPERVISOR: exec_cmd: nio create_udp udp-068b3727-996f-419b-965c-caa20675cecd 10030 127.0.0.1 10031 
+Dec 21 14:46:18.413 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RL2 0 0 udp-068b3727-996f-419b-965c-caa20675cecd 
+Dec 21 14:46:18.414 HYPERVISOR: exec_cmd: vm get_status RL2 

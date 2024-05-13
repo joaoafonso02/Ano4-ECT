@@ -1,0 +1,113 @@
+Dec 29 15:35:38.261 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+Dec 29 15:35:38.262 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63999.
+Dec 29 15:35:38.272 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 29 15:35:38.272 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips 
+Dec 29 15:35:38.272 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips
+Dec 29 15:35:38.273 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/127a4eab-c6f4-4be6-90d6-fd4629bb6940 
+Dec 29 15:35:38.273 GENERAL: working_dir=/Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/127a4eab-c6f4-4be6-90d6-fd4629bb6940
+Dec 29 15:35:38.273 HYPERVISOR: exec_cmd: vm create RM1 7 c7200 
+Dec 29 15:35:38.273 VM: VM RM1 created.
+Dec 29 15:35:38.274 HYPERVISOR: exec_cmd: vm set_con_tcp_port RM1 5007 
+Dec 29 15:35:38.274 HYPERVISOR: exec_cmd: c7200 get_mac_addr RM1 
+Dec 29 15:35:38.275 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:35:38.275 HYPERVISOR: exec_cmd: vm slot_add_binding RM1 0 0 C7200-IO-FE 
+Dec 29 15:35:38.276 HYPERVISOR: exec_cmd: vm set_disk0 RM1 0 
+Dec 29 15:35:38.277 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:35:38.277 HYPERVISOR: exec_cmd: vm set_idle_pc RM1 0x6062db80 
+Dec 29 15:35:38.279 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Dec 29 15:35:38.279 HYPERVISOR: exec_cmd: c7200 set_mac_addr RM1 ca07.3176.0000 
+Dec 29 15:35:38.280 HYPERVISOR: exec_cmd: vm set_nvram RM1 512 
+Dec 29 15:35:38.280 HYPERVISOR: exec_cmd: vm set_ram RM1 512 
+Dec 29 15:35:38.281 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:35:38.281 HYPERVISOR: exec_cmd: vm slot_remove_binding RM1 0 0 
+Dec 29 15:35:38.281 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:35:38.282 HYPERVISOR: exec_cmd: vm slot_add_binding RM1 0 0 C7200-IO-2FE 
+Dec 29 15:35:38.282 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:35:38.282 HYPERVISOR: exec_cmd: vm slot_add_binding RM1 1 0 PA-2FE-TX 
+Dec 29 15:35:38.283 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:35:38.283 HYPERVISOR: exec_cmd: vm slot_add_binding RM1 2 0 PA-2FE-TX 
+Dec 29 15:35:38.283 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:35:38.283 HYPERVISOR: exec_cmd: vm slot_add_binding RM1 3 0 PA-2FE-TX 
+Dec 29 15:35:43.170 HYPERVISOR: exec_cmd: nio create_udp udp-9b82281f-9090-4650-a1d1-1520268e0f34 10048 127.0.0.1 10049 
+Dec 29 15:35:43.395 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RM1 0 0 udp-9b82281f-9090-4650-a1d1-1520268e0f34 
+Dec 29 15:35:43.396 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:37:39.574 HYPERVISOR: exec_cmd: vm set_ghost_status RM1 2 
+Dec 29 15:37:39.575 HYPERVISOR: exec_cmd: vm set_ghost_file RM1 /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Dec 29 15:37:39.576 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 15:37:39.580 HYPERVISOR: exec_cmd: vm set_config RM1 configs/i7_startup-config.cfg configs/i7_private-config.cfg 
+Dec 29 15:37:39.580 HYPERVISOR: exec_cmd: vm start RM1 
+Dec 29 15:38:09.814 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Dec 29 15:38:39.816 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Dec 29 16:26:38.275 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 29 16:26:38.279 HYPERVISOR: exec_cmd: vm stop RM1 
+Dec 29 16:26:38.583 VM: VM RM1 shutdown.
+Dec 29 16:26:38.585 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Dec 30 21:35:22.892 HYPERVISOR: exec_cmd: vm get_status RM1 
+Dec 30 21:35:22.894 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 01 18:35:59.146 HYPERVISOR: exec_cmd: vm set_ghost_status RM1 2 
+Jan 01 18:35:59.149 HYPERVISOR: exec_cmd: vm set_ghost_file RM1 /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Jan 01 18:35:59.157 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 01 18:35:59.164 HYPERVISOR: exec_cmd: vm set_config RM1 configs/i7_startup-config.cfg configs/i7_private-config.cfg 
+Jan 01 18:35:59.166 HYPERVISOR: exec_cmd: vm start RM1 
+Jan 01 23:59:26.141 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 01 23:59:26.152 HYPERVISOR: exec_cmd: vm stop RM1 
+Jan 01 23:59:26.344 VM: VM RM1 shutdown.
+Jan 01 23:59:26.372 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 02 12:44:00.279 HYPERVISOR: exec_cmd: nio create_udp udp-078d1a52-61cf-42e0-92a7-35324be5752d 10060 127.0.0.1 10061 
+Jan 02 12:44:00.314 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RM1 0 1 udp-078d1a52-61cf-42e0-92a7-35324be5752d 
+Jan 02 12:44:00.317 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 02 12:52:08.965 HYPERVISOR: exec_cmd: vm set_ghost_status RM1 2 
+Jan 02 12:52:08.979 HYPERVISOR: exec_cmd: vm set_ghost_file RM1 /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Jan 02 12:52:08.985 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 02 12:52:08.989 HYPERVISOR: exec_cmd: vm set_config RM1 configs/i7_startup-config.cfg configs/i7_private-config.cfg 
+Jan 02 12:52:08.991 HYPERVISOR: exec_cmd: vm start RM1 
+Jan 02 13:25:00.921 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 02 13:25:00.922 HYPERVISOR: exec_cmd: vm stop RM1 
+Jan 02 13:25:01.028 VM: VM RM1 shutdown.
+Jan 02 13:25:01.029 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 02 13:25:14.938 HYPERVISOR: exec_cmd: vm set_ghost_status RM1 2 
+Jan 02 13:25:14.956 HYPERVISOR: exec_cmd: vm set_ghost_file RM1 /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Jan 02 13:25:14.957 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 02 13:25:14.958 HYPERVISOR: exec_cmd: vm set_config RM1 configs/i7_startup-config.cfg configs/i7_private-config.cfg 
+Jan 02 13:25:14.960 HYPERVISOR: exec_cmd: vm start RM1 
+Jan 02 14:54:33.773 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 03 11:33:34.793 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 03 11:33:34.825 HYPERVISOR: exec_cmd: vm stop RM1 
+Jan 03 11:33:34.958 VM: VM RM1 shutdown.
+Jan 03 11:33:34.995 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 03 12:22:52.968 HYPERVISOR: exec_cmd: vm set_ghost_status RM1 2 
+Jan 03 12:22:52.978 HYPERVISOR: exec_cmd: vm set_ghost_file RM1 /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Jan 03 12:22:52.983 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 03 12:22:52.986 HYPERVISOR: exec_cmd: vm set_config RM1 configs/i7_startup-config.cfg configs/i7_private-config.cfg 
+Jan 03 12:22:52.986 HYPERVISOR: exec_cmd: vm start RM1 
+Jan 03 14:08:48.062 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:08:49.188 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:08:52.051 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:16:01.820 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:17:20.705 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:23:38.808 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:23:41.676 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:23:44.136 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 14:24:55.912 HYPERVISOR: exec_cmd: vm set_ios RM1 /Users/joaoafonso/GNS3/images/IOS/c7200-adventerprisek9-mz.152-4.M7.image 
+Jan 03 16:20:57.866 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 03 16:20:57.892 HYPERVISOR: exec_cmd: vm stop RM1 
+Jan 03 16:20:58.002 VM: VM RM1 shutdown.
+Jan 03 16:20:58.017 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 03 17:08:08.707 HYPERVISOR: exec_cmd: vm set_ghost_status RM1 2 
+Jan 03 17:08:08.709 HYPERVISOR: exec_cmd: vm set_ghost_file RM1 /Users/joaoafonso/Desktop/UA/Ano4-ECT/AC/project/project-files/dynamips/c7200-adventerprisek9-mz.152-4.M7.image-512.ghost 
+Jan 03 17:08:08.711 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 03 17:08:08.715 HYPERVISOR: exec_cmd: vm set_config RM1 configs/i7_startup-config.cfg configs/i7_private-config.cfg 
+Jan 03 17:08:08.719 HYPERVISOR: exec_cmd: vm start RM1 
+Jan 04 12:35:53.459 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 04 12:35:53.462 HYPERVISOR: exec_cmd: vm stop RM1 
+Jan 04 12:35:53.581 VM: VM RM1 shutdown.
+Jan 04 12:35:53.599 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 04 12:36:48.225 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 04 12:36:48.227 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 04 12:36:51.645 HYPERVISOR: exec_cmd: vm get_status RM1 
+Jan 04 12:36:51.646 HYPERVISOR: exec_cmd: vm extract_config RM1 
+Jan 04 12:36:51.674 HYPERVISOR: exec_cmd: vm delete RM1 
+Jan 04 12:36:51.676 VM: VM RM1 destroyed.
+Jan 04 12:36:51.682 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 04 12:36:52.123 HYPERVISOR: Stopped.
+Jan 04 12:36:52.123 GENERAL: reset done.

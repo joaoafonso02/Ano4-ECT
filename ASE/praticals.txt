@@ -1,0 +1,18 @@
+27/02/2024
+
+(Full) OS - Based
+RTOS Based
+Baremetal
+
+
+PC Compiler --> BootLoader do esp32
+
+tick -> o tempo mais pequeno num OS; ele dá-me a resolução temporal.
+   tick mt curto -> maior precisão mas maior overhead
+   tick maior    -> menor precisão mas menos overhead
+
+   DEVE SER AJUSTÁVEL PELO "portTICK_PERIOD_MS" por exemplo no esp32
+
+Para sair do idf.py -p /dev/tty... monitor -> ctrl + t + x
+
+
